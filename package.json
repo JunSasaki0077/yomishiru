@@ -9,12 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantine/charts": "^8.1.2",
     "@mantine/core": "^8.1.2",
     "@mantine/hooks": "^8.1.2",
     "@tabler/icons-react": "^3.34.0",
+    "dayjs": "^1.11.13",
     "next": "15.3.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "recharts": "^2.15.4"
   },
   "devDependencies": {
     "@biomejs/biome": "2.0.4",

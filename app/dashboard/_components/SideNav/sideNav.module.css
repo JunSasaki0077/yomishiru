@@ -10,6 +10,9 @@
   flex-direction: column;
   border-right: rem(1px) solid
     light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+    @media (min-width: 48em) {
+      width: rem(200px)
+    }
 }
 
 .header {

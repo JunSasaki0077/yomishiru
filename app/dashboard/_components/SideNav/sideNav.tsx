@@ -9,8 +9,10 @@ import {
 
 import Link from "next/link";
 import { ActiveNavLink } from "../ActiveLink/activeLink";
-// import { ActionThemeIcon } from "@/src/components/Theme/ActionThemeIcon";
+
 import c from "./sideNav.module.css";
+import { ActionThemeIcon } from "../ActionThemeIcon/actionThemeIcon";
+import { UserButton } from "../UserButton/userButton";
 
 const data = [
 	{ link: "/dashboard", label: "ホーム", icon: IconDashboard },
@@ -25,10 +27,9 @@ export function SideNav(): React.ReactNode {
 			<div className={c.header}>
 				<Group justify="space-between">
 					ロゴ
-					{/* <ActionThemeIcon /> */}
+					<ActionThemeIcon />
 				</Group>
 			</div>
-
 			<ScrollArea className={c.links}>
 				<div className={c.linksInner}>
 					{data.map((item) => (
@@ -41,11 +42,10 @@ export function SideNav(): React.ReactNode {
 					))}
 				</div>
 			</ScrollArea>
-
 			<div className={c.footer}>
 				<Link href="/settings" className={c.userLink}>
 					<Group wrap="nowrap">
-						{/* <UserButton name="じゅん" email="jun@example.com" src="/user.svg" /> */}
+						<UserButton name="じゅん" email="jun@example.com" src="/user.svg" />
 						<IconChevronRight size={14} stroke={1.5} />
 					</Group>
 				</Link>

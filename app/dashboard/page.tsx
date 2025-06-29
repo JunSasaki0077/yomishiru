@@ -1,17 +1,16 @@
 import { Container, Space } from "@mantine/core";
+import Chart from "./_components/Heatmap/Heatmap";
+import { UserButton } from "./_components/UserButton/userButton";
 
-// import Calender from '@/src/components/Calender/Calender'
-// import { UserButton } from "./_components/UserButton/userButton";
-
-export default function Page() {
+export default async function Page() {
 	return (
-		<Container size="xs">
+		<Container size="xl">
 			<Space h="xl" />
 			<div>
-				{/* <UserButton name="じゅん" email="jun@example.com" src="/user.svg" /> */}
+				<UserButton name="じゅん" email="jun@example.com" src="/user.svg" />
 			</div>
 			<Space h="xl" />
-			{/* <Calender /> */}
+			<Chart />
 		</Container>
 	);
 }
